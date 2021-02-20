@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NavigationBar" customModule="No_Bullshit_Birthdays" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="k5f-nW-7kL" id="HMr-eN-veq"/>
+                <outlet property="barTitle" destination="QLW-fY-313" id="g4T-li-P3a"/>
+                <outlet property="editButton" destination="H6e-zW-NN7" id="d4D-H1-ehM"/>
+                <outlet property="navBarView" destination="iN0-l3-epB" id="TkL-aT-KEA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NavigationBar" customModule="No_Bullshit_Birthdays" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="111"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k5f-nW-7kL">
+                    <rect key="frame" x="20" y="30" width="64" height="58"/>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" image="arrow.left" catalog="system">
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="55"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLW-fY-313">
+                    <rect key="frame" x="126.5" y="35.5" width="161" height="40"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="33"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6e-zW-NN7">
+                    <rect key="frame" x="333" y="23" width="61" height="65"/>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" image="square.and.pencil" catalog="system">
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="H6e-zW-NN7" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="1Rh-FY-bZA"/>
+                <constraint firstItem="k5f-nW-7kL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="GuZ-eM-mOl"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="H6e-zW-NN7" secondAttribute="bottom" constant="23" id="SVp-jB-Pj0"/>
+                <constraint firstItem="k5f-nW-7kL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="30" id="ask-fN-GZI"/>
+                <constraint firstItem="k5f-nW-7kL" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="3.5" id="kfE-wE-P5B"/>
+                <constraint firstItem="QLW-fY-313" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="lyr-bT-sXN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="H6e-zW-NN7" secondAttribute="trailing" constant="20" id="mgb-6V-XZc"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="k5f-nW-7kL" secondAttribute="bottom" constant="23" id="oDo-34-r63"/>
+                <constraint firstItem="H6e-zW-NN7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="23" id="uxb-c6-om4"/>
+                <constraint firstItem="QLW-fY-313" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="yYF-zK-Lxm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="-128.23660714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow.left" catalog="system" width="64" height="48"/>
+        <image name="square.and.pencil" catalog="system" width="64" height="58"/>
+    </resources>
+</document>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" id="AIh-NK-2fn" customClass="SocialAccountsStackView" customModule="No_Bullshit_Birthdays" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="110" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Ox-f8-iDt">
+                    <rect key="frame" x="0.0" y="0.0" width="110" height="200"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JjJ-Yf-0Bb">
+                            <rect key="frame" x="0.0" y="0.0" width="110" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="110" id="7H3-76-Fzo"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                            <connections>
+                                <action selector="didPressLogo:" destination="AIh-NK-2fn" eventType="touchUpInside" id="P01-ee-Nme"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mh7-gO-t70">
+                            <rect key="frame" x="0.0" y="100" width="110" height="100"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="JjJ-Yf-0Bb" secondAttribute="trailing" id="05u-y7-zE6"/>
+                        <constraint firstItem="JjJ-Yf-0Bb" firstAttribute="leading" secondItem="4Ox-f8-iDt" secondAttribute="leading" id="4lb-MB-0Ab"/>
+                        <constraint firstItem="Mh7-gO-t70" firstAttribute="height" secondItem="4Ox-f8-iDt" secondAttribute="height" multiplier="0.5" id="Dgw-Xi-VcA"/>
+                        <constraint firstItem="JjJ-Yf-0Bb" firstAttribute="top" secondItem="4Ox-f8-iDt" secondAttribute="top" id="WkQ-9l-vvb"/>
+                        <constraint firstItem="Mh7-gO-t70" firstAttribute="leading" secondItem="4Ox-f8-iDt" secondAttribute="leading" id="cAD-Td-rbS"/>
+                        <constraint firstAttribute="bottom" secondItem="Mh7-gO-t70" secondAttribute="bottom" id="gxn-Xb-NMg"/>
+                        <constraint firstItem="Mh7-gO-t70" firstAttribute="width" secondItem="JjJ-Yf-0Bb" secondAttribute="width" id="i7r-59-k92"/>
+                        <constraint firstItem="JjJ-Yf-0Bb" firstAttribute="height" secondItem="4Ox-f8-iDt" secondAttribute="height" multiplier="0.5" id="w8t-CH-vPR"/>
+                        <constraint firstAttribute="trailing" secondItem="Mh7-gO-t70" secondAttribute="trailing" id="yOH-Yc-XWD"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="4Ox-f8-iDt" firstAttribute="top" secondItem="AIh-NK-2fn" secondAttribute="top" id="2Cu-WI-HLN"/>
+                <constraint firstItem="4Ox-f8-iDt" firstAttribute="bottom" secondItem="1rq-bW-tsO" secondAttribute="bottom" id="HRv-nG-dqk"/>
+                <constraint firstItem="4Ox-f8-iDt" firstAttribute="leading" secondItem="1rq-bW-tsO" secondAttribute="leading" id="da8-VH-PHe"/>
+                <constraint firstItem="4Ox-f8-iDt" firstAttribute="trailing" secondItem="1rq-bW-tsO" secondAttribute="trailing" id="x8R-3b-MeK"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="1rq-bW-tsO"/>
+            <connections>
+                <outlet property="accountNameLabel" destination="Mh7-gO-t70" id="4MW-Mu-duY"/>
+                <outlet property="platformNameLabel" destination="JjJ-Yf-0Bb" id="kAA-QQ-njk"/>
+            </connections>
+            <point key="canvasLocation" x="79.710144927536234" y="110.49107142857143"/>
+        </stackView>
+    </objects>
+</document>

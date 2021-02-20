@@ -1,0 +1,45 @@
+PODS:
+  - ChameleonFramework/Default (2.1.0)
+  - ChameleonFramework/Swift (2.1.0):
+    - ChameleonFramework/Default
+  - ConfettiView-NSHipster (0.1.0)
+  - Eureka (5.2.1)
+  - PostalAddressRow (2.2.0):
+    - Eureka (~> 5.0)
+  - SplitRow (2.1.1):
+    - Eureka (~> 5.1)
+
+DEPENDENCIES:
+  - ChameleonFramework/Swift (from `https://github.com/wowansm/Chameleon`, branch `swift5`)
+  - ConfettiView-NSHipster
+  - Eureka
+  - PostalAddressRow
+  - SplitRow
+
+SPEC REPOS:
+  trunk:
+    - ConfettiView-NSHipster
+    - Eureka
+    - PostalAddressRow
+    - SplitRow
+
+EXTERNAL SOURCES:
+  ChameleonFramework:
+    :branch: swift5
+    :git: https://github.com/wowansm/Chameleon
+
+CHECKOUT OPTIONS:
+  ChameleonFramework:
+    :commit: 96d52c36a45847fff60bcff7a58fec1e4bd7390b
+    :git: https://github.com/wowansm/Chameleon
+
+SPEC CHECKSUMS:
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  ConfettiView-NSHipster: 83395e9810b45fcc498ce29c4bcdf172afeffe06
+  Eureka: c883105488e05bc65539f583246ecf9657cabbfe
+  PostalAddressRow: 00b1ee182a0fcb741f5f7ea4a91b6fd59de9083d
+  SplitRow: 921e76fbbd7ef50d005131d6665a6e10f26df04b
+
+PODFILE CHECKSUM: eaa8b57a83a2806351523b6db6bfa44dc810a866
+
+COCOAPODS: 1.8.4

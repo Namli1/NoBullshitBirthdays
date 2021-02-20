@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="18G6032" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Companion" representedClassName=".Companion" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="Transformable" valueTransformerName="" customClassName="PostalAddress"/>
+        <attribute name="birthday" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="contactingFrequency" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="normalizedBirthday" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="notes" optional="YES" attributeType="String"/>
+        <attribute name="phoneNumbers" optional="YES" attributeType="Transformable" valueTransformerName="" customClassName="[String]"/>
+        <attribute name="photo" optional="YES" attributeType="Binary"/>
+        <attribute name="socialAccounts" optional="YES" attributeType="Transformable" valueTransformerName="" customClassName="[[String]]"/>
+        <relationship name="newRelationship" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Group" inverseName="newRelationship" inverseEntity="Group"/>
+    </entity>
+    <entity name="Group" representedClassName="Group" syncable="YES" codeGenerationType="class">
+        <attribute name="activeTime" optional="YES" attributeType="String"/>
+        <attribute name="groupImage" optional="YES" attributeType="Binary"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="notes" optional="YES" attributeType="String"/>
+        <relationship name="newRelationship" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Companion" inverseName="newRelationship" inverseEntity="Companion"/>
+    </entity>
+    <elements>
+        <element name="Companion" positionX="-336.20703125" positionY="-27.57421875" width="128" height="208"/>
+        <element name="Group" positionX="-512.33984375" positionY="16.76171875" width="128" height="118"/>
+    </elements>
+</model>
